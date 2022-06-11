@@ -1,5 +1,5 @@
 // function getAlert (){
-//     alert("hi mami")
+//     alert("hi user")
 // }
 
 // function printName (){
@@ -13,10 +13,11 @@
 // function getText (){
 //     text1.style.font = "30px"
 // }
-
+// 1
 // function getAlert (){
 //     alert("wllcom")
 // }
+//  2
 
 // function getTime (){
 //     var myTime = new Date()
@@ -39,13 +40,13 @@
 
 // window.onload = function DateOF() {
 //   var myDate = new Date();
-//   var body= document.body;
-//   if (myDate.getHours < 12) {
-//     body.style.backgroundColor = "yellow" ;
-//     body.innerText ="good day";
+//   var body = document.body;
+//   if (myDate.getHours() > 12) {
+//     body.style.backgroundColor = "yellow";
+//     body.innerText = "good day";
 //   } else {
 //     body.style.backgroundColor = "red";
-//     body.innerText ="good evning "
+//     body.innerText = "good evning ";
 //   }
 // };
 // window.onload =function getAge (){
@@ -65,22 +66,59 @@
 //     function grinColor(){
 //    var x= document.getElementById("wellcom")
 //     x.style.color ="green"
+// // }
+// // ............תרגול חוזר של השאלות..........
+// function wellcomeAlert(){
+//     alert("welcome")
 // }
-window.onload = function getAge() {
-  var age = prompt("enter youer age");
-  var userAge = document.getElementById("wellcome");
-  if (age > 18) {
-    userAge.style.color = "red";
-    userAge.innerText ="wellcome"
-  }
+// var nowTime= new Date()
+// function printTime(){
+//     document.write(nowTime.getHours() + ":" +nowTime.getMinutes() + ":" + nowTime.getSeconds())
+// }
+// function colorToGreen(){
+//  myColor.style.color="red"
+// };
+// function widthGetBiger(){
+//    botton.style.width ="100px"
+// }
 
-    else{
-      userAge.style.color = "blue";
-      userAge.innerText ="wellcome"
+// function texstChange(){
+//     document.getElementById("pText1").innerText= "na na na"
+// }
+// function printName(){
+//     var userFirst = document.getElementById("userName").value
+//     document.write(userFirst)
+// }
+
+// window.onload = function getDate() {
+//   var body = document.body;
+//   var liveTime = new Date();
+//   if (liveTime.getHours() > 12) {
+//     body.style.backgroundColor = "yellow";
+//     body.innerText="good morning";
+//   }
+//     else{
+//       body.style.backgroundColor="red"
+//       body.innerText="good eivneing"
+
+//     }
+// };
+
+// var nowyear = new Date().getFullYear();
+// var userYear =+ document.getElementById("myDate").value.substr(0,3);
+// function userDayOfBirth(){
+//     if (nowyear - userYear > 18){
+//         document.body.innerText="welcom"
+//         // document.getElementById("myDate").style.color="red"
+//     };
+
+//    document.body.innerText="bye bye"
+// }
+function sendLoto(){
+    var random= Math.floor(Math.random()*57);
+    var userNume = document.getElementById("userNome").value;
+    if(random == userNume){
+        body.innerText ="seccess"
     };
-   
-};
- function getGreen (){
-        var x =document.getElementById("wellcome");
-        x.style.color ="green"
-    }
+    body.innerText ="loser";
+}
